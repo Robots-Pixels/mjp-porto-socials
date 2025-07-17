@@ -250,6 +250,7 @@ body {
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid #e9ecef;
+
 }
 
 .info-card:hover {

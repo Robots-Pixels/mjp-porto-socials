@@ -33,7 +33,6 @@ nav{
     display: flex;
     justify-items: center;
     align-items: center;
-    gap: 40px;
 }
 
 .navbar li{

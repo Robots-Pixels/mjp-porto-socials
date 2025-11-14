@@ -170,9 +170,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.2);
     border-radius: 12px;
-    backdrop-filter: blur(10px);
 }
 
 .social-content h3 {
@@ -227,6 +225,7 @@ h1{
 .card-icon {
     width: 70px;
     height: 70px;
+    padding: 5px;
     background: linear-gradient(135deg, #c0857a, #9f728b);
     border-radius: 50%;
     display: flex;
@@ -278,3 +277,12 @@ h1{
     border-radius: 20px;
 }
 
+
+.fade {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.fade.hide {
+  opacity: 0;
+}

@@ -100,7 +100,7 @@ h1{
 .social-links {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
 }
 
 .social-link {
@@ -157,6 +157,16 @@ h1{
 }
 
 .youtube:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px #d1706a;
+}
+
+.instagram {
+    background: linear-gradient(135deg, #f9ce34, #ee2a7b, #6228d7);
+    box-shadow: 0 8px 25px #d1706a;
+}
+
+.instagram:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 35px #d1706a;
 }

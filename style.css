@@ -129,7 +129,7 @@ body {
 
 .social-links {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 30px;
 }
 
@@ -141,7 +141,7 @@ body {
     text-decoration: none;
     color: white;
     transition: all 0.3s ease;
-    min-width: 350px;
+    min-width: 320px;
     position: relative;
     overflow: hidden;
 }

@@ -104,6 +104,7 @@ h1{
 }
 
 .social-link {
+    width: 100%;
     display: flex;
     align-items: center;
     padding: 25px 35px;
@@ -111,7 +112,7 @@ h1{
     text-decoration: none;
     color: white;
     transition: all 0.3s ease;
-    min-width: 350px;
+    min-width: 320px;
     position: relative;
     overflow: hidden;
 }

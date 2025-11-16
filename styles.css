@@ -13,31 +13,18 @@ body {
 }
 
 header{
-    height: 16vh;
     display: flex ;
     justify-content: center;
     position: fixed;
     z-index: 9999;
-    width: 100%;
-    top: 0;
-    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 nav{
     height: 100%;
     z-index: 50;
-}
-
-.navbar{
-    height: 100%;
-    display: flex;
-    justify-items: center;
-    align-items: center;
-}
-
-.navbar li{
-    color: white;
-    font-weight: 600;
 }
 
 ul{
@@ -46,28 +33,22 @@ ul{
 
 a{
     text-decoration: none;
+    transition: decoration 0.2s;
 }
-
-.logo{
-    height: 100%;
+a:hover{
+    text-decoration: underline;
 }
 
 .logo a img{
-    height: 100%;
+    width: 80px;
 }
 
 .hero-section{
     width: 100%;
     height: 100vh;
-    background: #000;
-    position: relative;
-}
-
-.hero-cover{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    background: url("/cover.png");
+    background-position: center;
+    background-size: cover;
 }
 
 .hero-overlay{
@@ -75,7 +56,7 @@ a{
     position: absolute;
     width: 100%;
     height: 100%;
-    opacity: 40%;
+    opacity: 20%;
 }
 
 .headline-container{

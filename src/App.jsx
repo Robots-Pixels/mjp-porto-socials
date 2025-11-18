@@ -189,7 +189,7 @@ export default function App() {
         className="relative h-screen bg-cover bg-position-[60%] sm:bg-position-[45%] shadow-black shadow-2xl "
         style={{
           backgroundImage: `${
-            isSmall ? "url('/cover-mobile.png')" : "url('/cover.png')"
+            isSmall ? "url('/cover-m.jpeg')" : "url('/cover.jpg')"
           }`,
         }}
       >
@@ -243,7 +243,7 @@ export default function App() {
             <div className="w-full sm:w-1/2 mb-6 sm:mb-0">
               <div className="w-full px-4 ">
                 <h1 className="mb-6 text-2xl sm:text-3xl font-medium leading-tight text-black tracking-wide opacity-0 animate-fadeIn">
-                  Notre Mission
+                  Notre Vision
                 </h1>
 
                 <p className="mb-6">

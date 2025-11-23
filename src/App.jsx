@@ -8,8 +8,6 @@ import {
   ChurchIcon,
   FlagTriangleRightIcon,
   Globe,
-  Locate,
-  PinIcon,
   MapPin,
 } from "lucide-react";
 
@@ -20,13 +18,19 @@ const headlines = [
 
 export default function App() {
   const [isSmall, setIsSmall] = useState(false);
+  const [isVerySmall, setIsVerySmall] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 768) {
+      if (window.innerWidth < 460) {
+        setIsVerySmall(true);
+        setIsSmall(false);
+      } else if (window.innerWidth < 768) {
+        setIsVerySmall(false);
         setIsSmall(true);
-      } else {
+      }else{
+        setIsVerySmall(false);
         setIsSmall(false);
       }
     };
@@ -35,7 +39,7 @@ export default function App() {
     window.addEventListener("resize", handleResize);
 
     return () => window.removeEventListener("resize", handleResize);
-  }, [isSmall, setIsSmall]);
+  }, [isSmall, setIsSmall, isVerySmall, setIsVerySmall]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -58,7 +62,7 @@ export default function App() {
     <div className="mb-20 sm:mb-0">
       {/* ==== HEADER (fixed side nav) ==== */}
 
-      {isSmall ? (
+      {(isVerySmall) ? (
         <header
           className={`fixed bottom-0 duration-500 z-9999 bg-[#9D6C7D]/90 rounded-t-xl w-full flex justify-center`}
         >
@@ -142,7 +146,7 @@ export default function App() {
         </header>
       )}
 
-      {!isSmall && (
+      {!isVerySmall && (
         <aside
           className={`fixed top-1/2 ${
             scrolled ? "-right-100" : "right-0"
@@ -186,11 +190,9 @@ export default function App() {
 
       {/* ==== HERO ==== */}
       <section
-        className="relative h-screen bg-cover bg-position-[60%] sm:bg-position-[45%] shadow-black shadow-2xl "
+        className="relative h-screen bg-cover bg-position-[60%] sm:bg-position-[45%] shadow-black/20 shadow-2xl"
         style={{
-          backgroundImage: `${
-            isSmall ? "url('/cover-m.jpeg')" : "url('/cover.jpg')"
-          }`,
+          backgroundImage: `${isVerySmall ? "url('/cover-mi.jpeg')" : isSmall ? "url('/cover-mid.jpeg')" : "url('/cover.jpg')" }`,
         }}
       >
         <div className="absolute inset-0 bg-black/20" />

@@ -75,7 +75,7 @@ export default function App() {
               </li>
 
               <li className="bg-white rounded-xl p-2">
-                <a href="#mission">
+                <a href="#Vision">
                   <FlagTriangleRightIcon className="text-[#9D6C7D]/90"></FlagTriangleRightIcon>
                 </a>
               </li>
@@ -118,8 +118,8 @@ export default function App() {
                 </a>
               </li>
               <li>
-                <a href="#mission" className="hover:underline">
-                  Mission
+                <a href="#Vision" className="hover:underline">
+                  Vision
                 </a>
               </li>
               <li>
@@ -169,8 +169,8 @@ export default function App() {
                 </a>
               </li>
               <li>
-                <a href="#mission" className="hover:underline">
-                  Mission
+                <a href="#Vision" className="hover:underline">
+                  Vision
                 </a>
               </li>
               <li>
@@ -190,7 +190,7 @@ export default function App() {
 
       {/* ==== HERO ==== */}
       <section
-        className="relative h-screen bg-cover bg-position-[60%] sm:bg-position-[45%] shadow-black/20 shadow-2xl"
+        className="relative h-screen bg-cover bg-position-[60%] sm:bg-position-[45%] shadow-black/80 shadow-2xl"
         style={{
           backgroundImage: `${isVerySmall ? "" : isSmall ? "url('/cover-mid.jpeg')" : "url('/cover.jpg')" }`,
         }}
@@ -245,7 +245,7 @@ export default function App() {
           </div>
         </section>
 
-        <section id="mission" className="pt-20">
+        <section id="Vision" className="pt-20">
           <div className="flex flex-col sm:flex-row gap-4">
             <div className="w-full sm:w-1/2 mb-6 sm:mb-0">
               <div className="w-full px-4 ">

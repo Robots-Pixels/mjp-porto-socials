@@ -192,9 +192,14 @@ export default function App() {
       <section
         className="relative h-screen bg-cover bg-position-[60%] sm:bg-position-[45%] shadow-black/20 shadow-2xl"
         style={{
-          backgroundImage: `${isVerySmall ? "url('/cover-mi.jpeg')" : isSmall ? "url('/cover-mid.jpeg')" : "url('/cover.jpg')" }`,
+          backgroundImage: `${isVerySmall ? "" : isSmall ? "url('/cover-mid.jpeg')" : "url('/cover.jpg')" }`,
         }}
       >
+        <img 
+        src="/cover-mi.jpeg" 
+        alt="" 
+        className="sm:hidden w-full h-full"
+        />
         <div className="absolute inset-0 bg-black/20" />
         <div className="absolute inset-0 flex items-end mb-40">
           {/* <div className="mx-auto w-full bg-[#9D6C7D]/30 flex items-center justify-center rounded max-w-6xl px-4 text-center">

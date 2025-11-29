@@ -298,7 +298,7 @@ export default function App() {
             <div className="space-y-5 md:w-1/2">
               {/* Facebook */}
               <SocialLink
-                href="https://www.facebook.com/JeunesICCPortoNovo"
+                href="https://www.facebook.com/share/14MdWT7AzBG/"
                 gradient="from-[#505a7d] to-[#374781]"
                 shadow="shadow-facebook"
                 icon={<img src="/facebook.svg" />}

@@ -436,6 +436,11 @@ export default function App() {
           .shadow-instagram {
             box-shadow: 0 8px 25px #d1706a;
           }
+
+          }
+          .shadow-TikTok {
+            box-shadow: 0 8px 25px #d1706a;
+          }
         }
       `}</style>
     </div>

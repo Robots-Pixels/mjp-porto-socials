@@ -337,6 +337,17 @@ export default function App() {
               />
             </div>
 
+             {/* TikTok */}
+              <SocialLink
+                href="https://www.tiktok.com/@ejp_portonovo"
+                gradient="from-[#f9ce34] via-[#ee2a7b] to-[#6228d7]"
+                shadow="shadow-instagram"
+                icon={<img src="/insta.svg" />}
+                title="TikTok"
+                desc="Ne manquez aucun événement"
+              />
+            </div>
+
             {/* Image placeholder */}
             <div
               className="min-h-100 w-full rounded-xl bg-cover bg-center md:h-auto md:w-1/2"

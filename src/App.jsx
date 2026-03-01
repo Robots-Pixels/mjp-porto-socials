@@ -145,7 +145,7 @@ export default function App() {
           </nav>
         </header>
       )}
-
+  
       {!isVerySmall && (
         <aside
           className={`fixed top-1/2 ${
@@ -187,7 +187,6 @@ export default function App() {
           </nav>
         </aside>
       )}
-
       {/* ==== HERO ==== */}
       <section
         className="relative h-screen bg-cover bg-position-[60%] sm:bg-position-[45%] shadow-black/80 shadow-2xl"
@@ -214,7 +213,7 @@ export default function App() {
 
       {/* ==== MAIN CONTENT ==== */}
       <div className="mx-auto max-w-6xl px-4 sm:px-0">
-        <section id="us" className="pt-20">
+        <section id="us">
           <div className="gap-4 w-full text-center">
             <div className="w-full px-4 ">
               <h1 className="mb-6 text-2xl sm:text-3xl font-medium leading-tight text-black tracking-wide opacity-0 animate-fadeIn">
@@ -305,6 +304,26 @@ export default function App() {
                 title="Facebook"
                 desc="Suivez nos actualités et événements"
               />
+              {/* Instagram */}
+              <SocialLink
+                href="https://www.instagram.com/ejp_portonovo"
+                gradient="from-[#f9ce34] via-[#ee2a7b] to-[#6228d7]"
+                shadow="shadow-instagram"
+                icon={<img src="/insta.svg" />}
+                title="Instagram"
+                desc="Ne manquez aucun événement"
+              />
+
+             {/* TikTok */}
+              <SocialLink
+                href="https://www.tiktok.com/@ejp_portonovo"
+                gradient="from-[#000000] to-[#FE2C55]"
+                shadow="shadow-tiktok"
+                icon={<img className="font-white" src="/tiktok.svg" />}
+                title="TikTok"
+                desc="Découvrez nos meilleurs moments en vidéo"
+              />
+
 
               {/* WhatsApp */}
               <SocialLink
@@ -316,6 +335,7 @@ export default function App() {
                 desc="Rejoignez notre groupe de discussion"
               />
 
+
               {/* YouTube */}
               <SocialLink
                 href="https://youtube.com/@ejp_porto-novo"
@@ -325,28 +345,8 @@ export default function App() {
                 title="YouTube"
                 desc="Rejoignez notre chaîne YouTube"
               />
-
-              {/* Instagram */}
-              <SocialLink
-                href="https://www.instagram.com/ejp_portonovo"
-                gradient="from-[#f9ce34] via-[#ee2a7b] to-[#6228d7]"
-                shadow="shadow-instagram"
-                icon={<img src="/insta.svg" />}
-                title="Instagram"
-                desc="Ne manquez aucun événement"
-              />
             </div>
-
-             {/* TikTok */}
-              <SocialLink
-                href="https://www.tiktok.com/@ejp_portonovo"
-                gradient="from-[#f9ce34] via-[#ee2a7b] to-[#6228d7]"
-                shadow="shadow-instagram"
-                icon={<img src="/insta.svg" />}
-                title="TikTok"
-                desc="Ne manquez aucun événement"
-              />
-            </div>
+            
 
             {/* Image placeholder */}
             <div
@@ -358,6 +358,7 @@ export default function App() {
               </div>
             </div>
           </div>
+
         </section>
 
         {/* ==== MAP ==== */}
@@ -386,64 +387,7 @@ export default function App() {
           </p>
         </footer>
       </div>
-
-      {/* ==== TAILWIND CUSTOM UTILITIES ==== */}
-      <style jsx>{`
-        @layer utilities {
-          .text-shadow-lg {
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-          }
-          .animate-fadeIn {
-            animation: fadeIn 0.8s ease-out forwards;
-          }
-          @keyframes fadeIn {
-            from {
-              opacity: 0;
-              transform: translateY(10px);
-            }
-            to {
-              opacity: 1;
-              transform: translateY(0);
-            }
-          }
-          .shine::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(
-              90deg,
-              transparent,
-              rgba(255, 255, 255, 0.2),
-              transparent
-            );
-            transition: left 0.5s;
-          }
-          .shine:hover::before {
-            left: 100%;
-          }
-          .shadow-facebook {
-            box-shadow: 0 8px 25px rgba(24, 119, 242, 0.3);
-          }
-          .shadow-whatsapp {
-            box-shadow: 0 8px 25px #7bbd65;
-          }
-          .shadow-youtube {
-            box-shadow: 0 8px 25px #d1706a;
-          }
-          .shadow-instagram {
-            box-shadow: 0 8px 25px #d1706a;
-          }
-
-          }
-          .shadow-TikTok {
-            box-shadow: 0 8px 25px #d1706a;
-          }
-        }
-      `}</style>
-    </div>
+  </div>
   );
 }
 

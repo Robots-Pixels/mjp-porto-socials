@@ -316,7 +316,7 @@ export default function App() {
 
              {/* TikTok */}
               <SocialLink
-                href="https://www.tiktok.com/@ejp_portonovo"
+                href="https://vm.tiktok.com/ZNRamonWW/"
                 gradient="from-[#000000] to-[#FE2C55]"
                 shadow="shadow-tiktok"
                 icon={<img className="font-white" src="/tiktok.svg" />}
